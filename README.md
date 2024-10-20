@@ -66,3 +66,23 @@ git reset --hard <commit Hash>
 ### to Initialize
 
 git init
+
+
+
+## Most Importent commands
+
+git init
+
+git branch -M main
+
+git add .
+
+git commit -m "all files Added"
+
+>>> git remote # what's our remote 
+>>> git remote -v # some more info 
+
+
+>>> git push origin main / master 
+
+>>> git push -u origin main
