@@ -69,20 +69,33 @@ git init
 
 
 
-## Most Importent commands
+## Quick setup — if you’ve done this kind of thing before
+
+or	
+
+https://github.com/cauvery-digital/seo-agency.git
+
+
+Get started by creating a new file or uploading an existing file. We recommend every repository include a README, LICENSE, and .gitignore.
+
+# …or create a new repository on the command line
+
+
+echo "# seo-agency" >> README.md
 
 git init
 
+git add README.md
+
+git commit -m "first commit"
+
 git branch -M main
 
-git add .
+git remote add origin https://github.com/cauvery-digital/seo-agency.git
 
-git commit -m "all files Added"
+git push -u origin main
 
->>> git remote # what's our remote 
->>> git remote -v # some more info 
-
-
->>> git push origin main / master 
-
->>> git push -u origin main
+# …or push an existing repository from the command line
+git remote add origin https://github.com/cauvery-digital/seo-agency.git
+git branch -M main
+git push -u origin main
