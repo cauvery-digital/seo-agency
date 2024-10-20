@@ -1,4 +1,4 @@
-### Git Commands
+# Git Commands
 
 ## Configuring Git
 
@@ -11,11 +11,11 @@ git config --list
 
 ## Clone And Status
 
-# Clone- cloning a repository from github to our local machine
+### Clone- cloning a repository from github to our local machine
 
 git clone <-Link->
 
-# Status - displays the state of the code
+## Status - displays the state of the code
 
 git status
 
@@ -23,66 +23,79 @@ untracked, modified, staged, unmodified
 
 ## Branch Commands
 
-#### to check branch
+### to check branch
 
 git branch
 
-#### to rename branch
+### to rename branch
 
 git branch -M main
 
-#### to navigate
+### to navigate
 
 git checkout <branch name>
 
-#### to create new branch
+### to create new branch
 
 git checkout -b <new branch name>
 
 
-#### to delete branch
+### to delete branch
 
 git branch -d <branch name>
 
 
-### Undoing Changes
+## Undoing Changes
 
-#### Case1: staged changes
+### Case1: staged changes
 
 git reset <file name>
 
 git reset
 
-#### Case2: commited changes (for one commit)
+### Case2: commited changes (for one commit)
 
 git reset HEAD-1
 
-#### Case3: commited changes (for many commits)
+### Case3: commited changes (for many commits)
 
 git reset <commit Hash>
 
 git reset --hard <commit Hash>
 
-### to Initialize
+## to Initialize
 
 git init
 
 
 
-## Most Importent commands
+# Quick setup — if you’ve done this kind of thing before
+
+or	
+
+https://github.com/cauvery-digital/seo-agency.git
+
+
+Get started by creating a new file or uploading an existing file. We recommend every repository include a README, LICENSE, and .gitignore.
+
+## …or create a new repository on the command line
+
+
+echo "# seo-agency" >> README.md
 
 git init
+
+git add README.md
+
+git commit -m "first commit"
 
 git branch -M main
 
-git add .
+git remote add origin https://github.com/cauvery-digital/seo-agency.git
 
-git commit -m "all files Added"
+git push -u origin main
 
->>> git remote # what's our remote 
->>> git remote -v # some more info 
-
-
->>> git push origin main / master 
-
->>> git push -u origin main
+## …or push an existing repository from the command line
+git remote add origin https://github.com/cauvery-digital/seo-agency.git
+git branch -M main
+git push -u origin main
